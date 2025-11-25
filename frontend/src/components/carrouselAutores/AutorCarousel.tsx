@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { AutorService } from '../../services/AutorService';
-import type { Autor } from '../../../../backend/Models/Autor';
+import type { Autor } from '../../../../backend/src/Models/Autor';
 import './AutorCarousel.css';
 
 const AutorCarousel: React.FC = () => {

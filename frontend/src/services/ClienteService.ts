@@ -1,4 +1,4 @@
-import type { Cliente } from "../../../backend/Models/Cliente";
+import type { Cliente } from "../../../backend/src/Models/Cliente";
 import { fetchApi } from "./api";
 
 export class ClienteService {

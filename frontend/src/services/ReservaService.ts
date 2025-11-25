@@ -1,5 +1,5 @@
-import type { Reserva } from "../../../backend/Models/Reserva";
-import type { Libro } from "../../../backend/Models/Libro";
+import type { Reserva } from "../../../backend/src/Models/Reserva";
+import type { Libro } from "../../../backend/src/Models/Libro";
 import { fetchApi } from "./api";
 
 export class ReservaService {

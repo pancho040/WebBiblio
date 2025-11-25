@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Autor } from '../../../../backend/Models/Autor';
+import type { Autor } from '../../../../backend/src/Models/Autor';
 import './AutorCard.css';
 
 interface AutorCardProps {

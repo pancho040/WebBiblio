@@ -1,4 +1,4 @@
-import type { Opiniones, OpinionesFunc } from "../../../backend/Models/Opiniones";
+import type { Opiniones, OpinionesFunc } from "../../../backend/src/Models/Opiniones";
 import { fetchApi } from "./api";
 
 export class OpinionesService {

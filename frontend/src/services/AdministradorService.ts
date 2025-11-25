@@ -1,4 +1,4 @@
-import type { Administrador, AdministradorFunc } from "../../../backend/Models/Administrador";
+import type { Administrador, AdministradorFunc } from "../../../backend/src/Models/Administrador";
 import { fetchApi } from "./api";
 
 export class AdministradorService {

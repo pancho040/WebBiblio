@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Libro } from '../../../../backend/Models/Libro';
+import type { Libro } from '../../../../backend/src/Models/Libro';
 import './LibroCard.css';
 import logazo from './../../assets/logazo.png'
 interface LibroCardProps {

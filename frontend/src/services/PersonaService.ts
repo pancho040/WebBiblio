@@ -1,4 +1,4 @@
-import type { Persona, PersonaFunc } from "../../../backend/Models/Persona";
+import type { Persona, PersonaFunc } from "../../../backend/src/Models/Persona";
 import { fetchApi } from "./api";
 
 export class PersonaService {

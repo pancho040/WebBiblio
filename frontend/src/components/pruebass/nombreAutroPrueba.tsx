@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AutorService } from "../../services/AutorService";
-import type { Autor } from "../../../../backend/Models/Autor";
+import type { Autor } from "../../../../backend/src/Models/Autor";
 
 export const AutorBuscarPorNombre: React.FC = () => {
   const [nombre, setNombre] = useState("");

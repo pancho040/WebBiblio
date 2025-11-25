@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { LibroService } from '../../services/LibroService';
-import type { Libro } from '../../../../backend/Models/Libro';
+import type { Libro } from '../../../../backend/src/Models/Libro';
 import './LibroCarousel.css';
 import logazo from '../../assets/logazo.png'
 const LibroCarousel: React.FC = () => {

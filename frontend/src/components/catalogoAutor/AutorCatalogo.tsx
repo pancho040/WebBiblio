@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import type { FC } from 'react';
 import AutorCard from '../cardAutor/AutorCard';
 import { AutorService } from '../../services/AutorService';
-import type { Autor } from '../../../../backend/Models/Autor';
+import type { Autor } from '../../../../backend/src/Models/Autor';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faUser, 

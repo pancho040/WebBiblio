@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import type { FC } from 'react';
 import LibroCard from '../cardLibro/LibroCard';
 import { ReservaService } from '../../services/ReservaService';
-import type { Libro } from '../../../../backend/Models/Libro';
+import type { Libro } from '../../../../backend/src/Models/Libro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faSearch,

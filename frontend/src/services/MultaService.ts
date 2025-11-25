@@ -1,4 +1,4 @@
-import type { Multa, MultaFunc } from "../../../backend/Models/Multa";
+import type { Multa, MultaFunc } from "../../../backend/src/Models/Multa";
 import { fetchApi } from "./api";
 
 export class MultaService {

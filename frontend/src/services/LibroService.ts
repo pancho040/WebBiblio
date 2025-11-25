@@ -1,4 +1,4 @@
-import type { Libro, LibroFunc } from "../../../backend/Models/Libro";
+import type { Libro, LibroFunc } from "../../../backend/src/Models/Libro";
 import { fetchApi } from "./api";
 
 export class LibroService {

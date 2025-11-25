@@ -1,4 +1,4 @@
-import type {Stock, StockFunc } from "../../../backend/Models/Stock";
+import type {Stock, StockFunc } from "../../../backend/src/Models/Stock";
 import { fetchApi } from "./api";
 
 export class ReservaService {

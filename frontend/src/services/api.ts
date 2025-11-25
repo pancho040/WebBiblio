@@ -1,4 +1,5 @@
-const API_BASE_URL = "http://localhost:5000/api";
+// Usa variable de entorno para producción o desarrollo
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 export const fetchApi = async (
   endpoint: string,
@@ -6,6 +7,7 @@ export const fetchApi = async (
 ): Promise<any> => {
   const url = `${API_BASE_URL}${endpoint}`;
   const token = localStorage.getItem("token");
+
   const headers: { [key: string]: string } = {
     "Content-Type": "application/json",
     ...(options.headers as { [key: string]: string } || {}),

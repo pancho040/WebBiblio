@@ -1,4 +1,4 @@
-import type { Autor, AutorFunc } from "../../../backend/Models/Autor";
+import type { Autor, AutorFunc } from "../../../backend/src/Models/Autor";
 import { fetchApi } from "./api";
 
 export class AutorService{

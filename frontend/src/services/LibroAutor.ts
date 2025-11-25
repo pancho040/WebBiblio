@@ -1,5 +1,5 @@
 import { fetchApi } from "./api";
-import type { Autor} from "../../../backend/Models/Autor";
+import type { Autor} from "../../../backend/src/Models/Autor";
 
 export class LibroAutorService {
     static async obtenerLibrosConAutoresYSinopsis(): Promise<{
