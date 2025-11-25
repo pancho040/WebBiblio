@@ -157,7 +157,10 @@ const ReservaCatalogo: FC<ReservaCatalogoProps> = ({ ciCliente }) => {
             <label>Fecha límite de devolución:</label>
             <DatePicker
               selected={fechaLimite}
-              onChange={(date: Date) => setFechaLimite(date)}
+              onChange={(date) => {
+    if (date) setFechaLimite(date);
+}}
+
               minDate={minFechaLimite}
               className="input-field date-picker-input"
               placeholderText="Selecciona una fecha"

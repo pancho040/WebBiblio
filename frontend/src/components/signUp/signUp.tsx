@@ -32,12 +32,13 @@ const SignUp: React.FC = () => {
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  // ✅ Actualizado para aceptar null y File/Date
   const handleInputChange = (field: keyof SignUpData) => (
-    value: string | boolean | number | Date
+    value: string | number | boolean | Date | File | null
   ) => {
     setFormData((prev) => ({
       ...prev,
-      [field]: value,
+      [field]: value === null ? "" : value, // evita null en campos string
     }));
     setMessage(null);
     setError(null);
@@ -75,8 +76,8 @@ const SignUp: React.FC = () => {
       <NavBar
         items={navItems}
         logo={logazo}
-        logoAlt="Logo de la aplicacion">
-      </NavBar>
+        logoAlt="Logo de la aplicacion"
+      />
       <div className="signUp-container">
         <form onSubmit={handleSubmit} className="signup-form">
           <h2>Registro de Usuario</h2>
@@ -91,14 +92,13 @@ const SignUp: React.FC = () => {
                 handleInput={handleInputChange("nombre")}
                 resetMessage={() => {}}
               />
-                <Input
-            placeholder="CI Cliente"
-            type="text"
-            value={formData.ci_cliente}
-            handleInput={handleInputChange("ci_cliente")}
-            resetMessage={() => {}}
-          />
-             
+              <Input
+                placeholder="CI Cliente"
+                type="text"
+                value={formData.ci_cliente}
+                handleInput={handleInputChange("ci_cliente")}
+                resetMessage={() => {}}
+              />
               <Input
                 placeholder="Dirección"
                 type="text"
@@ -145,20 +145,20 @@ const SignUp: React.FC = () => {
               />
             </div>
           </div>
-           <Input
-                placeholder="Email"
-                type="email"
-                value={formData.email}
-                handleInput={handleInputChange("email")}
-                resetMessage={() => {}}
-              />
-        
+
+          <Input
+            placeholder="Email"
+            type="email"
+            value={formData.email}
+            handleInput={handleInputChange("email")}
+            resetMessage={() => {}}
+          />
 
           <Button handleClick={() => {}} disabled={loading}>
             {loading ? "Creando..." : "Crear Cuenta"}
           </Button>
 
-          {message && <p style={{ color: "White" }}>{message}</p>}
+          {message && <p style={{ color: "white" }}>{message}</p>}
           {error && <p style={{ color: "red" }}>{error}</p>}
         </form>
       </div>

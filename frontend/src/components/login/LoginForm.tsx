@@ -65,7 +65,7 @@ const LoginForm = () => {
             type="text"
             placeholder="Usuario"
             value={usuario}
-            handleInput={setUsuario}
+            handleInput={(value) => setUsuario(value as string)}
             resetMessage={() => setMensaje("")}
           />
           
@@ -73,7 +73,7 @@ const LoginForm = () => {
             type="password"
             placeholder="Contraseña"
             value={password}
-            handleInput={setPassword}
+            handleInput={(value) => setPassword(value as string)}
             resetMessage={() => setMensaje("")}
           />
           
