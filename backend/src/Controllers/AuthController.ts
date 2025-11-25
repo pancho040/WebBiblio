@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { supabase } from '../src/Config/supabase';
+import { supabase } from '../Config/supabase';
 import { Cliente } from '../Models/Cliente';
-import { generateToken } from '../src/utils/jwt';
+import { generateToken } from '../utils/jwt';
 
 
 export const login = async (req: Request, res: Response): Promise<void> => {

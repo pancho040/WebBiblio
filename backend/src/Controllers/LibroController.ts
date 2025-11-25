@@ -1,6 +1,6 @@
 import { Libro } from "../Models/Libro";
 import { Request, Response } from "express";
-import { supabase } from "../src/Config/supabase";
+import { supabase } from "../Config/supabase";
 
 export class LibroController {
     static async getLibro(req: Request, res: Response): Promise<void> {

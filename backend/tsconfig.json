@@ -2,11 +2,13 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "rootDir": "./src",       // Todos los archivos fuente están en src
+    "outDir": "./dist",       // La carpeta de compilación
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["src/**/*"],     // Asegura que compile todo dentro de src
+  "exclude": ["node_modules", "dist"]
 }

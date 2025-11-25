@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { supabase } from "../src/Config/supabase";
+import { supabase } from "../Config/supabase";
 import { MultaFunc } from "../Models/Multa";
 
 export class MultaController {

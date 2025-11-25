@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { supabase } from "../src/Config/supabase";
+import { supabase } from "../Config/supabase";
 import { Cliente } from "../Models/Cliente";
 import { PersonaFunc, Persona } from "../Models/Persona";
 
